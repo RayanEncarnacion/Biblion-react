@@ -1,0 +1,6 @@
+node_modules
+.env
+API_INFO.md
+FOLDER_STRUCTURE.md
+SEARCHED_BOOKS.js
+SINGLE_BOOK.js
