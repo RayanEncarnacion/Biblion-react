@@ -1,11 +1,110 @@
-* {
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Nunito:wght@400;800&family=Oswald:wght@700&display=swap");
 
-html {
-  font-family: sans-serif;
+*,
+* + *,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 body {
-  margin: 0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #121212;
+  color: #f7f7f7;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.bg-darken {
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.accent {
+  color: #d7a419;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+/* Remove blue X on search input */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a,
+button {
+  font-family: "Nunito", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+/* Keyframes */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    right: -105%;
+  }
+  to {
+    opacity: 1;
+    right: 0;
+  }
+}
+
+@keyframes slideInBounce {
+  0% {
+    right: -105%;
+    opacity: 0;
+  }
+  35% {
+    right: 0;
+  }
+  65% {
+    right: -4%;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    right: 0;
+    opacity: 1;
+  }
+  to {
+    right: -105%;
+    opacity: 0;
+  }
 }
