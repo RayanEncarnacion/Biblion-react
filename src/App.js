@@ -1,11 +1,15 @@
-import React from 'react';
-
+import React, { Fragment } from "react";
+import AboutUs from "./components/AboutUs";
+import Hero from "./components/Hero";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
-    <div>
-
-    </div>
+    <Fragment>
+      <Navigation />
+      <Hero />
+      <AboutUs />
+    </Fragment>
   );
 }
 
